@@ -1,0 +1,5 @@
+2022-02-27 19:43:42 INFO  ImageImplTest:28 - getOSTypeTest
+2022-02-27 19:43:42 INFO  ImageImpl:22 - Checking OS.....
+2022-02-27 19:43:45 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
