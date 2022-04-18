@@ -9,7 +9,7 @@ import org.junit.jupiter.api.*;
 public class Lab2Test {
 
     private static final Logger log = LogManager.getLogger(Lab2Test.class);
-    LabsImpl taskService = new LabsImpl();
+    LabsImpl labsImpl = new LabsImpl();
     String TEST_IMAGE_PATH = "D:/compVision/images/";
 
     @Test
@@ -18,7 +18,7 @@ public class Lab2Test {
         ImageImpl imageImlp = new ImageImpl();
         log.info("lab2Success");
         String TEST_IMAGE_NAME = "testimage.jpg";
-        taskService.task2(60, TEST_IMAGE_PATH, TEST_IMAGE_NAME);
+        labsImpl.task2(4, TEST_IMAGE_PATH, TEST_IMAGE_NAME);
     }
 
 }

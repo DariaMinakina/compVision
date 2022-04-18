@@ -3,3 +3,238 @@
 2022-02-27 19:43:45 DEBUG ImageImpl:38 - Properties are loaded 
 OS Version: windows 10
 Open CV version - 4.5.5
+2022-03-14 22:30:28 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:30:39 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:30:39 INFO  Lab2Test:19 - lab2Success
+2022-03-14 22:32:00 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:32:00 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:32:00 INFO  Lab2Test:19 - lab2Success
+2022-03-14 22:36:12 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:36:17 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:36:17 INFO  Lab2Test:19 - lab2Success
+2022-03-14 22:38:20 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:38:22 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:38:22 INFO  Lab2Test:19 - lab2Success
+2022-03-14 22:45:48 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:45:54 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:45:54 INFO  Lab2Test:19 - lab2Success
+2022-03-14 22:50:51 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:50:54 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:50:54 INFO  Lab2Test:19 - lab2Success
+2022-03-14 22:56:07 INFO  ImageImpl:22 - Checking OS.....
+2022-03-14 22:56:10 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-03-14 22:56:10 INFO  Lab2Test:19 - lab2Success
+2022-04-17 17:32:38 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 17:33:43 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 17:33:43 INFO  Lab3Test:22 - lab2Success
+2022-04-17 17:51:09 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 17:51:11 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 17:51:11 INFO  Lab3Test:22 - lab2Success
+2022-04-17 18:00:43 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:00:44 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:00:44 INFO  Lab3Test:22 - lab2Success
+2022-04-17 18:04:41 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:04:41 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:04:41 INFO  Lab3Test:22 - lab2Success
+2022-04-17 18:05:56 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:05:56 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:05:56 INFO  Lab3Test:22 - lab2Success
+2022-04-17 18:07:37 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:07:39 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:07:39 INFO  Lab3Test:22 - lab2Success
+2022-04-17 18:13:36 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:13:40 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:13:40 INFO  Lab3Test:30 - lab3Laplace
+2022-04-17 18:32:52 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:32:56 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:32:56 INFO  Lab3Test:39 - lab3Mirror
+2022-04-17 18:35:41 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:35:41 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:35:41 INFO  Lab3Test:39 - lab3Mirror
+2022-04-17 18:37:08 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:37:08 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:37:08 INFO  Lab3Test:39 - lab3Mirror
+2022-04-17 18:37:38 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:37:38 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:37:38 INFO  Lab3Test:39 - lab3Mirror
+2022-04-17 18:38:08 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:38:08 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:38:08 INFO  Lab3Test:39 - lab3Mirror
+2022-04-17 18:46:40 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:46:45 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:46:45 INFO  Lab3Test:48 - lab3Mirror
+2022-04-17 18:55:58 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 18:56:01 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 18:56:01 INFO  Lab3Test:51 - lab3Unity
+2022-04-17 19:14:07 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 19:14:13 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 19:14:13 INFO  Lab3Test:73 - lab3ChangeImageSize
+2022-04-17 19:19:06 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 19:19:07 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 19:19:07 INFO  Lab3Test:73 - lab3ChangeImageSize
+2022-04-17 19:26:36 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 19:26:41 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 19:26:41 INFO  Lab3Test:82 - lab3RotationChanges
+2022-04-17 19:28:06 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 19:28:07 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 19:28:07 INFO  Lab3Test:82 - lab3RotationChanges
+2022-04-17 19:32:43 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 19:32:44 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 19:32:44 INFO  Lab3Test:92 - lab3WarpImage
+2022-04-17 19:35:59 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 19:36:02 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 19:36:02 INFO  Lab3Test:92 - lab3WarpImage
+2022-04-17 21:54:51 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 21:54:55 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 21:54:55 INFO  Lab4Test:23 - lab4
+2022-04-17 22:31:39 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:31:46 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:31:46 INFO  Lab3Test:52 - lab3Unity
+2022-04-17 22:36:07 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:36:14 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:36:14 INFO  Lab3Test:27 - lab3Sobel
+2022-04-17 22:42:07 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:42:07 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:42:07 INFO  Lab3Test:27 - lab3Sobel
+2022-04-17 22:46:14 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:46:14 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:46:14 INFO  Lab3Test:27 - lab3Sobel
+2022-04-17 22:46:39 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:46:39 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:46:39 INFO  Lab3Test:27 - lab3Sobel
+2022-04-17 22:47:04 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:47:04 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:47:04 INFO  Lab3Test:27 - lab3Sobel
+2022-04-17 22:47:29 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:47:30 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:47:30 INFO  Lab3Test:27 - lab3Sobel
+2022-04-17 22:49:37 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 22:49:38 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 22:49:38 INFO  Lab3Test:52 - lab3Unity
+2022-04-17 23:12:42 INFO  ImageImpl:22 - Checking OS.....
+2022-04-17 23:12:45 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-17 23:12:45 INFO  Lab3Test:52 - lab3Unity
+2022-04-18 14:24:47 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 14:24:52 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 14:24:52 INFO  Lab4Test:36 - lab4Rect
+2022-04-18 14:33:56 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 14:34:02 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 14:34:02 INFO  Lab4Test:45 - lab4MorphingEllipse
+2022-04-18 14:37:18 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 14:37:22 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 14:37:22 INFO  Lab4Test:54 - lab4MorphingBlackHat
+2022-04-18 14:41:45 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 14:41:46 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 14:41:46 INFO  Lab4Test:54 - lab4MorphingBlackHat
+2022-04-18 14:44:27 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 14:44:28 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 14:44:28 INFO  Lab4Test:63 - lab4MorphingGradient
+2022-04-18 15:20:09 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 15:20:13 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 15:20:13 INFO  Lab4Test:36 - lab4Rect
+2022-04-18 15:24:37 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 15:24:37 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 15:24:37 INFO  Lab4Test:36 - lab4Rect
+2022-04-18 15:35:31 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 15:35:32 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 15:35:32 INFO  Lab4Test:45 - lab4MorphingEllipse
+2022-04-18 15:38:48 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 15:38:48 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 15:38:48 INFO  Lab4Test:45 - lab4MorphingEllipse
+2022-04-18 15:41:13 INFO  ImageImpl:22 - Checking OS.....
+2022-04-18 15:41:13 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-18 15:41:13 INFO  Lab4Test:45 - lab4MorphingEllipse
