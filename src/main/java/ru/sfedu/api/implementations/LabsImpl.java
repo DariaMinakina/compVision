@@ -307,6 +307,7 @@ public class LabsImpl implements LabsInterface {
     }
 
     public void rectangle(Mat image){
+        int k=0;
         Mat grayImage = new Mat();
         Imgproc.cvtColor(image, grayImage, Imgproc.COLOR_BGR2GRAY);
         saveMatToFile(GRAYIMAGE, grayImage);
@@ -352,7 +353,7 @@ public class LabsImpl implements LabsInterface {
                 Imgproc.CHAIN_APPROX_SIMPLE);
         contours.sort(Collections.reverseOrder(Comparator.comparing(Imgproc::contourArea)));
         for (MatOfPoint contour : contours.subList(0, 10)) {
-            System.out.println(Imgproc.contourArea(contour));
+            log.info(Imgproc.contourArea(contour));
             MatOfPoint2f point2f = new MatOfPoint2f();
             MatOfPoint2f approxContour2f = new MatOfPoint2f();
             MatOfPoint approxContour = new MatOfPoint();
@@ -364,13 +365,27 @@ public class LabsImpl implements LabsInterface {
             Rect rect = Imgproc.boundingRect(approxContour);
             double ratio = (double) rect.height / rect.width;
             if (Math.abs(0.3 - ratio) > 0.15) {
+                k++;
                 continue;
             }
+            log.info(k);
             Mat submat = image.submat(rect);
             Imgproc.resize(submat, submat, new Size(400, 400 * ratio));
             saveMatToFile(RESULT+ contour.hashCode(), submat);
         }
-
     }
+
+    public void grayToBlackAndWhite(Mat srcImage){
+        Mat grayImage = new Mat();
+        Imgproc.cvtColor(srcImage, grayImage, Imgproc.COLOR_BGR2GRAY);
+        Mat detectedEdges = new Mat();
+        Imgproc.blur(grayImage, detectedEdges, new Size(3, 3));
+        Mat thresholdImage = new Mat();
+        double threshold = Imgproc.threshold(grayImage, thresholdImage, 0, 255, Imgproc.THRESH_OTSU);
+        Imgproc.Canny(detectedEdges, detectedEdges, threshold, threshold * 3);
+        saveMatToFile(DETECTED_EDGES, detectedEdges);
+    }
+
+
 
 }

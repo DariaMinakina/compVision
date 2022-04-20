@@ -383,3 +383,25 @@ Open CV version - 4.5.5
 OS Version: windows 10
 Open CV version - 4.5.5
 2022-04-20 23:33:01 INFO  Lab5Test:40 - lab5Rectangle
+2022-04-21 00:17:11 INFO  ImageImpl:22 - Checking OS.....
+2022-04-21 00:17:28 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-21 00:17:28 INFO  Lab5Test:40 - lab5Rectangle
+2022-04-21 00:18:24 INFO  ImageImpl:356 - 123204.5
+2022-04-21 00:18:25 INFO  ImageImpl:356 - 15482.0
+2022-04-21 00:18:25 INFO  ImageImpl:356 - 13047.0
+2022-04-21 00:18:25 INFO  ImageImpl:356 - 11093.5
+2022-04-21 00:18:25 INFO  ImageImpl:356 - 6096.0
+2022-04-21 00:18:25 INFO  ImageImpl:356 - 6056.0
+2022-04-21 00:18:25 INFO  ImageImpl:371 - 5
+2022-04-21 00:18:26 INFO  ImageImpl:356 - 4792.0
+2022-04-21 00:18:26 INFO  ImageImpl:356 - 4314.0
+2022-04-21 00:18:26 INFO  ImageImpl:356 - 4229.5
+2022-04-21 00:18:26 INFO  ImageImpl:371 - 7
+2022-04-21 00:18:26 INFO  ImageImpl:356 - 3463.0
+2022-04-21 00:31:56 INFO  ImageImpl:22 - Checking OS.....
+2022-04-21 00:31:57 DEBUG ImageImpl:38 - Properties are loaded 
+OS Version: windows 10
+Open CV version - 4.5.5
+2022-04-21 00:31:57 INFO  Lab6Test:22 - lab6GrayToBlackAndWhite

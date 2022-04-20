@@ -78,4 +78,5 @@ public class Constants {
     public static final String EDGE="edge";
     public static final String DILATION ="dilation";
     public static final String RESULT="result";
+    public static final String DETECTED_EDGES= "detectedEdges";
 }
