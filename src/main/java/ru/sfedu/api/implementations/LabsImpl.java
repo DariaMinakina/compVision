@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.photo.Photo;
 import ru.sfedu.api.interfaces.LabsInterface;
 
 import javax.swing.*;
@@ -12,9 +13,10 @@ import java.awt.*;
 import org.opencv.core.Point;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
-import java.util.Arrays;
+import java.util.*;
 import java.util.List;
 
+import static org.opencv.core.CvType.CV_8UC3;
 import static ru.sfedu.Constants.*;
 
 public class LabsImpl implements LabsInterface {
@@ -276,6 +278,99 @@ public class LabsImpl implements LabsInterface {
             Imgproc.morphologyEx(image, dst1_2, Imgproc.MORPH_BLACKHAT, morphEllipse);
             saveMatToFile(srcFileName + MRF_BLACKHAT_EL + size, dst1_2);
         }
+    }
+
+    public void testFillFlood(int initVal, Mat image, String srcFileName) {
+        Point seedPoint = new Point(0,0);
+        Scalar newVal = new Scalar(0,255,0);
+        Scalar loDiff = new Scalar(initVal,initVal,initVal);
+        Scalar upDiff = new Scalar(initVal,initVal,initVal);
+        Mat mask = new Mat();
+        Imgproc.floodFill(image, mask, seedPoint, newVal, new Rect(), loDiff, upDiff,
+                Imgproc.FLOODFILL_FIXED_RANGE);
+        saveMatToFile(srcFileName + FILL+initVal, image);
+    }
+
+    public void pyramid(int width, int height, String srcFileName) {
+        Mat mask = new Mat();
+        Mat noiseMat = new Mat(new Size(width, height), CV_8UC3, new Scalar(0, 0, 0));
+        Core.randn(noiseMat, 20, 50);
+        Core.add(noiseMat, noiseMat, noiseMat);
+        Imgproc.pyrDown(noiseMat, mask);
+        saveMatToFile(srcFileName + PYRDOWN_NATIVE, noiseMat);
+
+        Imgproc.pyrUp(mask, mask);
+        saveMatToFile(srcFileName + PYRUP, noiseMat);
+
+        Core.subtract(noiseMat, mask, mask);
+        saveMatToFile(srcFileName + CORE, noiseMat);
+    }
+
+    public void rectangle(Mat image){
+        Mat grayImage = new Mat();
+        Imgproc.cvtColor(image, grayImage, Imgproc.COLOR_BGR2GRAY);
+        saveMatToFile(GRAYIMAGE, grayImage);
+
+        Mat denoisingImage = new Mat();
+        Photo.fastNlMeansDenoising(grayImage, denoisingImage);
+        saveMatToFile(NO_NOISE, denoisingImage);
+
+        Mat histogramEqualizationImage = new Mat();
+        Imgproc.equalizeHist(denoisingImage, histogramEqualizationImage);
+        saveMatToFile(HISTOGRAM, histogramEqualizationImage);
+
+
+        Mat morphologicalOpeningImage = new Mat();
+        Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(5, 5));
+        Imgproc.morphologyEx(histogramEqualizationImage, morphologicalOpeningImage,
+                Imgproc.MORPH_RECT, kernel);
+        saveMatToFile(MORPHOLOGICAL_OPENING, morphologicalOpeningImage);
+
+        Mat subtractImage = new Mat();
+        Core.subtract(histogramEqualizationImage, morphologicalOpeningImage, subtractImage);
+        saveMatToFile(SUBTRACT, subtractImage);
+
+        Mat thresholdImage = new Mat();
+        double threshold = Imgproc.threshold(subtractImage, thresholdImage, 50, 255,
+                Imgproc.THRESH_OTSU);
+        saveMatToFile(THRESHOLD, thresholdImage);
+        thresholdImage.convertTo(thresholdImage, CvType.CV_16SC1);
+
+        Mat edgeImage = new Mat();
+        thresholdImage.convertTo(thresholdImage, CvType.CV_8U);
+        saveMatToFile(TR2, thresholdImage);
+
+        Imgproc.Canny(thresholdImage, edgeImage, threshold, threshold * 3, 3, true);
+        saveMatToFile(EDGE, edgeImage);
+
+        Mat dilatedImage = new Mat();
+        Imgproc.dilate(thresholdImage, dilatedImage, kernel);
+        saveMatToFile(DILATION, dilatedImage);
+
+        ArrayList<MatOfPoint> contours = new ArrayList<>();
+        Imgproc.findContours(dilatedImage, contours, new Mat(), Imgproc.RETR_TREE,
+                Imgproc.CHAIN_APPROX_SIMPLE);
+        contours.sort(Collections.reverseOrder(Comparator.comparing(Imgproc::contourArea)));
+        for (MatOfPoint contour : contours.subList(0, 10)) {
+            System.out.println(Imgproc.contourArea(contour));
+            MatOfPoint2f point2f = new MatOfPoint2f();
+            MatOfPoint2f approxContour2f = new MatOfPoint2f();
+            MatOfPoint approxContour = new MatOfPoint();
+            contour.convertTo(point2f, CvType.CV_32FC2);
+
+            double arcLength = Imgproc.arcLength(point2f, true);
+            Imgproc.approxPolyDP(point2f, approxContour2f, 0.03 * arcLength, true);
+            approxContour2f.convertTo(approxContour, CvType.CV_32S);
+            Rect rect = Imgproc.boundingRect(approxContour);
+            double ratio = (double) rect.height / rect.width;
+            if (Math.abs(0.3 - ratio) > 0.15) {
+                continue;
+            }
+            Mat submat = image.submat(rect);
+            Imgproc.resize(submat, submat, new Size(400, 400 * ratio));
+            saveMatToFile(RESULT+ contour.hashCode(), submat);
+        }
+
     }
 
 }

@@ -42,7 +42,7 @@ public class Lab3Test {
         ImageImpl imageImlp = new ImageImpl();
         log.info("lab3Mirror");
         Mat image = Imgcodecs.imread(TEST_IMAGE_PATH + SOFA_ONE_NAME, Imgcodecs.IMREAD_COLOR);
-        labsImpl.mirror(image,0, SOFA_ONE_NAME);
+        labsImpl.mirror(image,-1, SOFA_ONE_NAME);
     }
 
     @Test
@@ -65,7 +65,7 @@ public class Lab3Test {
         ImageImpl imageImlp = new ImageImpl();
         log.info("lab3Repeat");
         Mat image = Imgcodecs.imread(TEST_IMAGE_PATH + SOFA_ONE_NAME, Imgcodecs.IMREAD_COLOR);
-        labsImpl.repeatImage(image,2,3, SOFA_ONE_NAME);
+        labsImpl.repeatImage(image,3,2, SOFA_ONE_NAME);
     }
 
     @Test
@@ -84,7 +84,7 @@ public class Lab3Test {
         log.info("lab3RotationChanges");
         Mat image = Imgcodecs.imread(TEST_IMAGE_PATH + SOFA_ONE_NAME, Imgcodecs.IMREAD_COLOR);
         Mat dst=new Mat();
-        labsImpl.rotationChanges(image, dst, 45, false, SOFA_ONE_NAME);
+        labsImpl.rotationChanges(image, dst, 60, false, SOFA_ONE_NAME);
     }
 
     @Test

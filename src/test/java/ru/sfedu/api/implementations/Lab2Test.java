@@ -18,7 +18,7 @@ public class Lab2Test {
         ImageImpl imageImlp = new ImageImpl();
         log.info("lab2Success");
         String TEST_IMAGE_NAME = "testimage.jpg";
-        labsImpl.task2(4, TEST_IMAGE_PATH, TEST_IMAGE_NAME);
+        labsImpl.task2(3, TEST_IMAGE_PATH, TEST_IMAGE_NAME);
     }
 
 }

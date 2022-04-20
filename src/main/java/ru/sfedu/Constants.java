@@ -64,4 +64,18 @@ public class Constants {
     public static final String MRF_ERODE_EL="mrf_erode_el";
     public static final String MRF_DILATE_EL="mrf_dilate_el";
     public static final String PRF_NAME="mrf_";
+    public static final String FILL ="FILL";
+    public static final String PYRDOWN_NATIVE="pyrDown native";
+    public static final String PYRUP="pyrUp";
+    public static final String CORE="Core";
+    public static final String GRAYIMAGE="grayImage.jpg";
+    public static final String NO_NOISE= "noNoise";
+    public static final String HISTOGRAM="histogramEq";
+    public static final String MORPHOLOGICAL_OPENING="morphologicalOpening";
+    public static final String SUBTRACT="subtract";
+    public static final String THRESHOLD="threshold";
+    public static final String TR2 ="tr2";
+    public static final String EDGE="edge";
+    public static final String DILATION ="dilation";
+    public static final String RESULT="result";
 }
